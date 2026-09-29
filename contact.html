@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <header>
+        <h1>Department of Computer Science</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About the Department</a> | 
+            <a href="modules.html">Modules</a> | 
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Enquiry Form</h2>
+        <form>
+            <!-- Personal Information Fields -->
+            <p>
+                <label>First Name:</label><br>
+                <input type="text" name="firstname" required>
+            </p>
+            <p>
+                <label>Surname:</label><br>
+                <input type="text" name="surname" required>
+            </p>
+            <p>
+                <label>Email Address:</label><br>
+                <input type="email" name="email" required>
+            </p>
+            <p>
+                <label>Student Number:</label><br>
+                <input type="text" name="studentnumber">
+            </p>
+
+            <!-- Enquiry Type Dropdown Options -->
+            <p>
+                <label>Enquiry Type:</label><br>
+                <select name="enquiry_type">
+                    <option value="general">General enquiry</option>
+                    <option value="programme">Programme information</option>
+                    <option value="registration">Registration</option>
+                    <option value="technical">Technical support</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+
+            <!-- Message Area -->
+            <p>
+                <label>Message:</label><br>
+                <textarea name="message" rows="5" cols="30" required></textarea>
+            </p>
+
+            <!-- Preferred Contact Methods via Radio Buttons -->
+            <p>
+                <label>Preferred Contact Method:</label><br>
+                <input type="radio" id="email_pref" name="contact_method" value="email" checked>
+                <label for="email_pref">Email</label><br>
+                <input type="radio" id="phone_pref" name="contact_method" value="phone">
+                <label for="phone_pref">Phone</label><br>
+                <input type="radio" id="sms_pref" name="contact_method" value="sms">
+                <label for="sms_pref">SMS</label>
+            </p>
+
+            <!-- Form Action Buttons -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Department of Computer Science. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
